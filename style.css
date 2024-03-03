@@ -1,0 +1,263 @@
+html {
+    scroll-behavior: smooth;
+}
+ /* Estilos generales */
+ body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Encabezado */
+header {
+    background-color: #0b0234;
+    color: rgb(23, 168, 197);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none; /* Elimina los marcadores de lista */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina el margen por defecto */
+    display: flex; /* Alinear los elementos horizontalmente */
+    justify-content: center; /* Centrar los elementos de la lista en el contenedor */
+}
+nav li {
+    margin: 0 10px; /* Espacio entre botones */
+}
+
+
+
+nav a {
+    display: inline-block; /* Hace que el enlace sea un bloque en línea para permitir el padding */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    background-color: #3498db; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    border-radius: 20px; /* Borde redondeado del botón */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
+    text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+    background-color: #082c44; /* Cambia el color de fondo al pasar el ratón por encima */
+    text-decoration: none; /* Esto evitará que aparezca la línea de subrayado */
+}
+
+/* Estilos adicionales para links (opcional) */
+a {
+    color: #007bff;
+    text-decoration: none; /* Esto asegura que los enlaces no tengan subrayado por defecto */
+}
+
+a:hover {
+    text-decoration: underline; /* Esto aplica el subrayado al pasar el cursor, pero será sobrescrito por nav a:hover */
+}
+
+/* Secciones de contenido */
+section {
+    padding: 20px;
+    
+}
+
+section h2 {
+    color:rgb(23, 168, 197);
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos adicionales para links (opcional) */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#biografia {
+    position: relative;
+    text-align: center;
+    height: 700px;
+    overflow: hidden; /* Mantiene todo el contenido dentro de los límites de la sección */
+}
+
+#videoBackground, #videoBackgroundExperiencia, #videoBackgroundSkills {
+    position: absolute;
+    top: 0; /* Alinea el borde superior del video con el borde superior de su contenedor */
+    left: 0; /* Alinea el borde izquierdo del video con el borde izquierdo de su contenedor */
+    width: 100%; /* Establece el ancho del video igual al de su contenedor */
+    height: 100%; /* Establece la altura del video igual al de su contenedor */
+    z-index: -1; /* Coloca el video detrás del contenido */
+    object-fit: cover; /* Asegura que el video cubra toda el área del contenedor sin deformarse */
+}
+#biografia img {
+    display: inline-block;
+    width: 20%;
+    height: 42%;
+    border-radius: 50%;
+}
+#biografia p {
+    color: rgb(8, 196, 230);
+    text-align: justify;
+    max-width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.206); /* Añade una sombra oscura para destacar el texto */
+    background-color: rgba(23, 14, 14, 0.744); /* Fondo claro semitransparente para mejorar el contraste */
+    padding: 15px;
+}
+
+/* Estilos para la sección de Experiencia */
+#experiencia {
+    height: 720px;
+    text-align: center; /* Centra el texto del título de experiencia */
+    color: rgb(8, 196, 230);
+    overflow: hidden;
+    position: relative;
+}
+
+#tituloDeExperiencia, #tituloDeBiografia {
+    margin-bottom: 20px; /* Espacio debajo del título para separarlo de los bloques de experiencia */
+    color: rgb(8, 196, 230); /* Color blanco para el texto */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Sombra de texto para mejorar la legibilidad */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente oscuro para resaltar el título */
+    display: inline-block; /* Hace que el fondo solo cubra el texto */
+    padding: 5px 10px; /* Espaciado alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados para el fondo del título */
+    box-sizing: border-box;
+    width: 100%; /* Opcional: si quieres que ocupe todo el ancho disponible */
+}
+
+/* Contenedor Flex para los bloques de experiencia */
+#experiencias {
+    display: flex;
+    justify-content: center; /* Centra los bloques de experiencia en el eje horizontal */
+    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea si no caben */
+    gap: 20px; /* Espacio entre los bloques de experiencia */
+}
+
+/* Estilos individuales para cada bloque de experiencia */
+/* Estilos individuales para cada bloque de experiencia */
+#exp1, #exp2, #exp3 {
+    background:  rgba(23, 14, 14, 0.744); /* Fondo blanco semi-transparente */
+    border: 1px solid #cccccc6b; /* Borde sutil para definir los bloques */
+    padding: 15px; /* Espaciado interno para el contenido */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave para resaltar los bloques */
+    width: calc(33.333% - 20px); /* Ancho de los bloques ajustados para incluir el gap */
+    box-sizing: border-box; /* Asegura que el padding y el borde estén incluidos en el ancho total */
+}
+
+#experiencias #funciones, #logros {
+    text-align: justify;
+    text-justify: inter-word; /* Mejora la justificación del texto */
+}
+/* Estilos para la sección de habilidades */
+#skills {
+    height: 720px;
+    text-align: center; /* Centra el texto del título de experiencia */
+    color: rgb(8, 196, 230);
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+#listaDeSkills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skill {
+    background: rgba(23, 14, 14, 0.744);
+    border: 1px solid #cccccc6b;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    text-align: justify;
+    text-justify: inter-word;
+}
+  
+#tituloDeSkills {
+    text-align: center; /* Centra el texto del título de habilidades */
+    margin-bottom: 20px; /* Espacio debajo del título para separarlo del contenido */
+    color: rgb(8, 196, 230); /* Color personalizado para el texto */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Sombra de texto para mejorar la legibilidad */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para añadir contraste */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    display: inline-block; /* Hace que el elemento se comporte como bloque en línea, permitiendo alinear el texto correctamente */
+    width: 100%; /* Opcional: si quieres que ocupe todo el ancho disponible */
+}
+
+#contacto {
+    background-color: #0b0234;
+    text-align: center; /* Centra el contenido de la sección */
+}
+
+#contacto ul {
+    padding: 0; /* Remueve el padding por defecto */
+}
+
+#contacto li {
+    list-style: none; /* Oculta los marcadores de lista */
+    display: inline-block; /* Muestra los elementos de lista en línea y permite transformación */
+    margin: 0 10px; /* Espaciado horizontal entre íconos */
+}
+
+#contacto a {
+    color: #ffffff; /* Color inicial de los íconos y texto */
+    text-decoration: none; /* Remueve el subrayado de los enlaces */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transiciones suaves para color y transformación */
+    font-size: 2em; /* Aumenta el tamaño de los íconos */
+    display: inline-block; /* Permite la transformación */
+}
+
+#contacto a:hover, #contacto a:focus {
+    color: #3498db; /* Color cuando el ícono está seleccionado o se pasa sobre él */
+    transform: scale(1.2); /* Hace que el ícono "crezca" */
+}
+
+#contacto p {
+    color: #ffffff; /* Color del texto */
+    margin: 20px 0; /* Espaciado alrededor del texto */
+}
+
+/* Media query para ajustar la disposición en pantallas más pequeñas */
+@media (max-width: 768px) {
+    #experiencias {
+        flex-direction: column;
+        
+    }
+    #exp1, #exp2, #exp3 {
+        width: 100%; /* Ocupa todo el ancho disponible */
+    }
+    #listaDeSkills {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill {
+        width: 45%; /* Ajusta el ancho para dos columnas */
+        margin: 2.5%; /* Ajusta los márgenes para que haya espacio alrededor */
+      }
+}

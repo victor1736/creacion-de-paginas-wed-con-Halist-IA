@@ -3,160 +3,200 @@
 
 <head>
     <meta charset="UTF-8">
-    <style>
-        /* Estilos generales */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-/* Encabezado */
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    padding: 0;
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Secciones de contenido */
-section {
-    padding: 20px;
-    margin-top: 20px;
-}
-
-section h2 {
-    color: #333;
-}
-
-/* Pie de página */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Estilos adicionales para links (opcional) */
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-#biografia {
-    background-color: #111fb3;
-}
-img {
-    width: 30%;
-    height: 30%;
-    border-radius: 50%;
-}
-    </style>
-    <title>Portafolio de Víctor Alfonso Fernández Hoyos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Víctor Alfonso Fernández Hoyos</title>
 </head>
 
 <body>
-    <!-- Encabezado -->
-    <header>
+    <header id="inicio">
         <h1>Víctor Alfonso Fernández Hoyos</h1>
         <nav>
             <ul>
                 <li><a href="#biografia">Biografía</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#skills">skills</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Sección de Biografía -->
+
     <section id="biografia">
-        <img  src="./img/yo.png" alt="imagen de cabecera">
-        <h2>Biografía</h2>
+        <video autoplay muted loop id="videoBackground">
+            <source src="./img/castillo_animation.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+        <a href="#inicio"><img src="./img/yo.png" alt="imagen de cabecera"></a>
         <p>
-            Soy Víctor Fernández, un Ingeniero Electrónico apasionado y graduado con distinción de la Universidad del
-            Magdalena, donde mi curiosidad por la tecnología se convirtió en una vocación. Mi formación ha sido el pilar
-            sobre el cual he construido una carrera exitosa en el desarrollo web backend, fusionando los principios de
-            la ingeniería con la artesanía del código.
+            Soy Víctor Fernández, Ingeniero Electrónico graduado de la Universidad del Magdalena y un apasionado
+            desarrollador web backend. Con un profundo conocimiento en Python, C# y JavaScript, mi experiencia se
+            extiende a través de frameworks como Django y FastAPI, lo que me permite crear aplicaciones web eficaces y
+            bien estructuradas.<br>
 
-            Especializado en los lenguajes de programación Python, C#, y JavaScript, me he dedicado a dominar las
-            herramientas que dan forma al futuro digital. Frameworks como Django y FastAPI son mis aliados en la
-            creación de aplicaciones web robustas y eficientes, mientras que con bibliotecas como JSON, he desarrollado
-            una capacidad única para manipular y estructurar datos complejos.
+            Poseo también habilidades en el diseño frontend, con dominio de HTML y CSS, lo que me da una visión integral
+            de la construcción de sitios web. En mi flujo de trabajo diario, herramientas como Docker y GitHub son
+            esenciales para mantener un desarrollo colaborativo y eficiente.<br>
 
-            No me detengo solo en el backend; poseo una comprensión integral del ecosistema web, con conocimientos
-            sólidos en HTML y CSS que redondean mi perfil técnico. La colaboración y control de versiones son esenciales
-            en mi flujo de trabajo, razón por la cual Docker y GitHub son componentes críticos de mi caja de
-            herramientas de desarrollo.
+            La nube es un área donde destaco, aplicando mis conocimientos de AWS para desplegar servicios web escalables
+            y seguros. Como líder en proyectos backend, he contribuido al éxito de numerosas iniciativas, optimizando
+            operaciones empresariales mediante la implementación de soluciones como Netsuite.<br>
 
-            La nube es mi horizonte, y AWS el terreno donde llevo la innovación a nuevas alturas, implementando
-            soluciones escalables y seguras que potencian la infraestructura y servicios web.
-
-            Como líder de proyectos backend, mi enfoque proactivo y orientado a resultados ha generado impactos
-            positivos y tangibles. Además, mi especialización en Netsuite ha permitido a las organizaciones agilizar sus
-            procesos de facturación electrónica y automatización de informes, lo que demuestra mi habilidad para
-            transformar áreas operativas en centros de eficiencia.
-
-            Con una base sólida en ingeniería electrónica y un diplomado en IoT, abrazo los desafíos tecnológicos con
-            una mente analítica y soluciones creativas. Me esfuerzo por seguir creciendo y aportando a equipos dinámicos
-            que buscan no solo desarrollar, sino revolucionar el panorama digital.
-
-            Mi nombre, Víctor Fernández, representa más que un conjunto de habilidades; es sinónimo de innovación,
-            diligencia y éxito. Estoy emocionado por las oportunidades que están por venir y listo para contribuir con
-            mi experiencia y visión a proyectos que marquen la diferencia en esta era tecnológica vibrante y en
-            constante evolución.
+            Enfrento los desafíos tecnológicos con una mente analítica y soluciones innovadoras, buscando continuamente
+            crecer profesionalmente y sumar valor a equipos que lideran la transformación digital. Estoy entusiasmado
+            por las oportunidades futuras y preparado para llevar a cabo proyectos revolucionarios en esta era
+            tecnológica vibrante.<br>
         </p>
     </section>
 
     <!-- Sección de Experiencia -->
     <section id="experiencia">
-        <h2>Experiencia Profesional</h2>
-        <!-- Agrega aquí tus experiencias laborales, proyectos en los que has trabajado, etc. -->
+        <video autoplay muted loop id="videoBackgroundExperiencia">
+            <source src="./img/experiencia_animation.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+        <a href="#inicio"><h2 id="tituloDeExperiencia">Experiencia Profesional</h2></a>
+        <div id="experiencias">
+            <div id="exp1">
+                <h2>Consultor Tecnico Netsuite</h2>
+                <p>SOL4IT</p>
+                <p>2023 - actualidad</p>
+                <p id="funciones">Funciones:<br><br>
+                    1. Configurar y personalizar módulos de Netsuite para adaptarse a las necesidades del cliente.<br>
+                    2. Desarrollar scripts de SuiteScript para automatizar procesos y personalizar la plataforma.<br>
+                    3. Brindar soporte técnico y capacitación a usuarios finales.</p>
+                <p id="logros"> Logros:<br><br>
+                    1. Implementé con éxito Netsuite en 5 empresas, mejorando la eficiencia operativa y reduciendo los costos
+                    de TI.<br>
+                    2. Desarrollé un script de SuiteScript que automatizó el proceso de facturación, reduciendo el tiempo de
+                    procesamiento en un 50%.<br>
+                    3. Capacité a más de 20 usuarios finales en el uso de Netsuite, mejorando la adopción y la satisfacción
+                    del cliente.</p>
+    
+            </div>
+    
+            
+            <div id="exp2">
+                <h2>Desarrollador De Software Independiente</h2>
+                <p>Profesional independiente</p>
+                <p>2018 - 2023</p>
+                <p id="funciones">Funciones:<br><br>
+                    1. Diseño y desarrollo de sistema para monitorizar cultivo hidropónico de tomates usando tecnología NFT.<br>
+                    2. Creación de aplicación IoT con ESP32 para recolección de datos ambientales mediante sensores.<br>
+                    3. Implementación de servicios de análisis y alertas en Python con herramientas como Scikit Learn y Pandas.</p>
+                  
+                  <p id="logros">
+                    Logros:<br><br>
+                    1. Implementación exitosa de interfaz IoT para optimización y visualización de datos en la nube.<br>
+                    2. Mejora de la producción de tomate Cherry hidropónico gracias a automatización y algoritmos predictivos en Python.<br>
+                    3. Desarrollo de web interactiva para visualizar variables de producción y datos sensoriales, mejorando la interpretación mediante gráficos.</p>
+    
+            </div>
+            <div id="exp3">
+                <h2>Monitor Personalizado De Programación</h2>
+                <p>Universidad del Magdalena</p>
+                <p>2019 - 2022</p>
+                <p id="funciones">Funciones:<br><br>
+                    1. Brindar asistencia y orientación personalizada a estudiantes en el aprendizaje de programación.<br>
+                    2. Preparar y dictar clases y talleres sobre diferentes temas de programación.<br>
+                    3. Elaborar y evaluar tareas, proyectos y exámenes para medir el progreso y el aprendizaje de los
+                    estudiantes.</p>
+                <p id="logros">
+                    Logros:<br><br>
+                    1. Mejoré el rendimiento académico de los estudiantes en programación, logrando un aumento del 20% en
+                    las calificaciones en promedio.<br>
+                    2. Diseñé e impartí talleres y cursos que fueron altamente valorados por los estudiantes y mejoraron su
+                    comprensión y habilidades en programación.<br>
+                    3. Implementé un sistema de seguimiento y retroalimentación constante que mejoró la comunicación con los
+                    estudiantes y permitió una mejor orientación y guía en su aprendizaje
+                </p>
+            </div>
+        </div>
+        
     </section>
 
-    <!-- Sección de Proyectos -->
-    <section id="proyectos">
-        <h2>Proyectos Destacados</h2>
-        <!-- Describe algunos de tus proyectos destacados aquí -->
-    </section>
+<!-- Sección de Habilidades (Skills) -->
+<section id="skills">
+    <video autoplay muted loop id="videoBackgroundSkills">
+        <source src="./img/skills_animation.mp4" type="video/mp4">
+        Tu navegador no soporta videos.
+    </video>
+    <a href="#inicio"><h2 id="tituloDeSkills">Skills</h2></a>
+    <div id="listaDeSkills">
+        <!-- Habilidad 1 -->
+        <div class="skill">
+            <h3>Desarrollo Web y Programación</h3>
+            <ul>
+                <li>HTML/CSS: Creación y diseño de páginas web.</li>
+                <li>JavaScript: Interactividad en páginas web.</li>
+                <li>Python: Programación general y manejo de errores.</li>
+                <li>Django y FastAPI: Desarrollo de aplicaciones y APIs web.</li>
+                <li>Angular: Desarrollo de aplicaciones SPA.</li>
+            </ul>
+        </div>
+        <!-- Habilidad 2 -->
+        <div class="skill">
+            <h3>Gestión y Conocimiento Tecnológico</h3>
+            <ul>
+                <li>Conocimientos de tecnología para decisiones gerenciales.</li>
+                <li>Historia de la innovación y el emprendimiento.</li>
+            </ul>
+        </div>
+        <!-- Habilidad 3 -->
+        <div class="skill">
+            <h3>Habilidades Técnicas Específicas</h3>
+            <ul>
+                <li>Programación Orientada a Objetos (POO)</li>
+                <li>Control de Versiones:</li>
+            </ul>
+        </div>
+        <!-- Habilidad 5 -->
+        <div class="skill">
+            <h3>Gestión y Conocimiento Tecnológico</h3>
+            <ul>
+                <li>Conocimientos de Tecnología para Gerentes</li>
 
-    <!-- Sección de Contacto -->
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <!-- Información de contacto, como tu correo electrónico, perfil de LinkedIn, etc. -->
-    </section>
+            </ul>
+        </div>
+        <!-- Habilidad 6 -->
+        <div class="skill">
+            <h3>Cultura y Metodologías</h3>
+            <ul>
+                <li>Historia de la Innovación y el Emprendimiento</li>
+                <li>Historia de la Programación</li>
+            </ul>
+        </div>
+        <!-- Habilidad 7 -->
+        <div class="skill">
+            <h3>Habilidades Blandas</h3>
+            <ul>
+                <li>Capacidad de aprendizaje autónomo.</li>
+                <li>Resolución de problemas complejos.</li>
+            </ul>
+        </div>
+    </div>
+</section>
 
+<section id="contacto">
+    <a href="#inicio"><h2 id="tituloDeContacto">Contacto</h2></a>
+    <p>Puedes encontrarme y conectarte conmigo a través de las siguientes plataformas:</p>
+    <ul class="contact-list">
+        <li>
+            <a href="https://www.linkedin.com/in/victoralfonsofernandez-developer" target="_blank"
+                rel="noopener noreferrer"><i class="fab fa-linkedin"></i> </a>
+        </li>
+        <li>
+            <a href="https://github.com/victor1736" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> </a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/VAFHoyos" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i> </a>
+        </li>
+    </ul>
+    <p>O puedes enviarme un correo directamente:<br><a href="mailto:victoralfonsofernandezhoyos@gmail.com"><i class="fas fa-envelope"></i> victoralfonsofernandezhoyos@gmail.com</a></p>
+    <p>También puedes llamarme a mi teléfono celular:<br> <a href="tel:+573107483273"><i class="fas fa-phone"></i> 3107483273</a> (Colombia, Valle del Cauca - Cali)</p>
+</section>
     <!-- Pie de página -->
     <footer>
         <!-- El footer puede incluir derechos de autor, información de contacto adicional, enlaces a redes sociales, etc. -->
