@@ -3,57 +3,163 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Sitio Web Personal</title>
+    <style>
+        /* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Secciones de contenido */
+section {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+section h2 {
+    color: #333;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos adicionales para links (opcional) */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+#biografia {
+    background-color: #b31111;
+}
+img {
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+}
+    </style>
+    <title>Portafolio de Víctor Alfonso Fernández Hoyos</title>
 </head>
 
 <body>
+    <!-- Encabezado -->
     <header>
-        <h1>Bienvenido a Mi Sitio Web Personal</h1>
+        <h1>Víctor Alfonso Fernández Hoyos</h1>
+        <nav>
+            <ul>
+                <li><a href="#biografia">Biografía</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <!-- Aquí irá la barra de navegación -->
-    </nav>
+    <!-- Sección de Biografía -->
+    <section id="biografia">
+        <img  src="./yo.png" alt="imagen de cabecera">
+        <h2>Biografía</h2>
+        <p>
+            Soy Víctor Fernández, un Ingeniero Electrónico apasionado y graduado con distinción de la Universidad del
+            Magdalena, donde mi curiosidad por la tecnología se convirtió en una vocación. Mi formación ha sido el pilar
+            sobre el cual he construido una carrera exitosa en el desarrollo web backend, fusionando los principios de
+            la ingeniería con la artesanía del código.
 
-    <section id="about-me">
-        <h2>Acerca de Mí</h2>
-        <p>Soy un Ingeniero Electrónico graduado de la Universidad del Magdalena con una sólida experiencia en
-            desarrollo web backend. Mi enfoque se centra en los lenguajes de programación Python, C#, y JavaScript,
-            trabajando con frameworks líderes como Django, FastAPI y bibliotecas como JSON.
-        </p>
-        <p>
-            Además de mis habilidades especializadas, poseo conocimientos formativos en HTML y CSS que complementan mi
-            perfil como desarrollador web. He trabajado con herramientas como Docker y GitHub para la gestión de
-            versiones, y cuento con una amplia experiencia en el uso de servicios en la nube, especialmente en AWS
-            (Amazon Web Services).
-        </p>
-        <p>
-            Mi enfoque proactivo y orientado a resultados me ha permitido liderar proyectos de desarrollo web backend
-            con éxito. Mi sólida formación académica en ingeniería electrónica, respaldada por un diplomado en IoT, me
-            proporciona una base sólida para enfrentar los desafíos tecnológicos más exigentes.
-        </p>
-        <p>
-            Asimismo, destaco en Netsuite, donde he contribuido significativamente a la automatización de informes y a
-            la configuración de sistemas de Facturación Electrónica. Mi objetivo es seguir creciendo como desarrollador
-            web backend, centrándome en Python, C#, y JavaScript, y formar parte de equipos dinámicos donde pueda
-            aplicar mis habilidades y conocimientos para impulsar el éxito de proyectos innovadores.
-        </p>
-        <p>
-            Considero que mi experiencia y habilidades me convierten en un recurso esencial para proyectos tecnológicos
-            innovadores, y estoy entusiasmado por las oportunidades futuras que puedan surgir en este apasionante campo.
+            Especializado en los lenguajes de programación Python, C#, y JavaScript, me he dedicado a dominar las
+            herramientas que dan forma al futuro digital. Frameworks como Django y FastAPI son mis aliados en la
+            creación de aplicaciones web robustas y eficientes, mientras que con bibliotecas como JSON, he desarrollado
+            una capacidad única para manipular y estructurar datos complejos.
+
+            No me detengo solo en el backend; poseo una comprensión integral del ecosistema web, con conocimientos
+            sólidos en HTML y CSS que redondean mi perfil técnico. La colaboración y control de versiones son esenciales
+            en mi flujo de trabajo, razón por la cual Docker y GitHub son componentes críticos de mi caja de
+            herramientas de desarrollo.
+
+            La nube es mi horizonte, y AWS el terreno donde llevo la innovación a nuevas alturas, implementando
+            soluciones escalables y seguras que potencian la infraestructura y servicios web.
+
+            Como líder de proyectos backend, mi enfoque proactivo y orientado a resultados ha generado impactos
+            positivos y tangibles. Además, mi especialización en Netsuite ha permitido a las organizaciones agilizar sus
+            procesos de facturación electrónica y automatización de informes, lo que demuestra mi habilidad para
+            transformar áreas operativas en centros de eficiencia.
+
+            Con una base sólida en ingeniería electrónica y un diplomado en IoT, abrazo los desafíos tecnológicos con
+            una mente analítica y soluciones creativas. Me esfuerzo por seguir creciendo y aportando a equipos dinámicos
+            que buscan no solo desarrollar, sino revolucionar el panorama digital.
+
+            Mi nombre, Víctor Fernández, representa más que un conjunto de habilidades; es sinónimo de innovación,
+            diligencia y éxito. Estoy emocionado por las oportunidades que están por venir y listo para contribuir con
+            mi experiencia y visión a proyectos que marquen la diferencia en esta era tecnológica vibrante y en
+            constante evolución.
         </p>
     </section>
 
-    <section id="my-work">
-        <h2>Mi Trabajo</h2>
-        <!-- Aquí puedes mostrar algunos de tus trabajos o proyectos -->
+    <!-- Sección de Experiencia -->
+    <section id="experiencia">
+        <h2>Experiencia Profesional</h2>
+        <!-- Agrega aquí tus experiencias laborales, proyectos en los que has trabajado, etc. -->
     </section>
 
+    <!-- Sección de Proyectos -->
+    <section id="proyectos">
+        <h2>Proyectos Destacados</h2>
+        <!-- Describe algunos de tus proyectos destacados aquí -->
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <!-- Información de contacto, como tu correo electrónico, perfil de LinkedIn, etc. -->
+    </section>
+
+    <!-- Pie de página -->
     <footer>
-        <p>Contacto: <a href="mailto:victoralfonsofernandezhoyos@gmail.com">victoralfonsofernandezhoyos@gmail.com</a>
-        </p>
+        <!-- El footer puede incluir derechos de autor, información de contacto adicional, enlaces a redes sociales, etc. -->
     </footer>
 </body>
 
